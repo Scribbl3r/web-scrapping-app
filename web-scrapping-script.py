@@ -108,6 +108,7 @@ def scrapAllUrls():
     info = []
     for url in urls :
        info.append(get_product_details(url))
+       #saveToTxt(get_product_details(url))
 
     #print(info)
     saveToExcel(info)
